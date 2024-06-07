@@ -52,7 +52,6 @@ async function searchMedium(query) {
         }
     }
 }
-app.get('/', async (req, res) => {res.json('hello')}
 
 app.get('/search', async (req, res) => {
     const query = req.query.q;

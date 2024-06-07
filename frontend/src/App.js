@@ -23,7 +23,7 @@ function App() {
         setLoading(true);
         setError('');
         try {
-            const response = await axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`);
+            const response = await axios.get(`https://medium-scraper-two.vercel.app/`);
             if (!response.data || !Array.isArray(response.data)) {
                 throw new Error('Invalid response from server');
             }
